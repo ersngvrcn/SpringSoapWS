@@ -8,6 +8,8 @@ public class SecondService {
 
     @WebMethod(operationName = "SecondServiceMethod1")
     public String method1(){
+        int a = 1;
         return "hello SecondServiceMethod1";
     }
+    
 }
