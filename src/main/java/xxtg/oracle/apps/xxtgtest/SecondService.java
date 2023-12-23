@@ -10,7 +10,7 @@ public class SecondService {
     public String method1(){
         int a = 1;
         String b = null;
-        b.toStting();
+        b.toString();
         return "hello SecondServiceMethod1";
     }
     
