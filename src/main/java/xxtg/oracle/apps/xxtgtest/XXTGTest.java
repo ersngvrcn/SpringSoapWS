@@ -17,6 +17,8 @@ public class XXTGTest {
 
     @WebMethod(operationName = "method1")
     public String method1() throws Exception {
+        Integer a = null;
+        String abc = a.toString();
         Connection conn = null;
         PreparedStatement preparedStatement = null;
         String returnMessage = "SUCCESSFUL";
