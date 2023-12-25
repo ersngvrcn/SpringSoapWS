@@ -5,7 +5,7 @@ import javax.jws.WebService;
 
 @WebService(serviceName = "SecondService")
 public class SecondService {
-
+    /* Returns String */
     @WebMethod(operationName = "SecondServiceMethod1")
     public String method1(){
         int a = 1;
