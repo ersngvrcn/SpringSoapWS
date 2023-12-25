@@ -13,10 +13,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 @WebService(serviceName = "XXTGTestService")
+/*XXTGTest class*/    
 public class XXTGTest {
-
+    /* Returns String */
     @WebMethod(operationName = "method1")
     public String method1() throws Exception {
+        Integer a = null;
+        String abc = a.toString();
         Connection conn = null;
         PreparedStatement preparedStatement = null;
         String returnMessage = "SUCCESSFUL";
@@ -48,6 +51,7 @@ public class XXTGTest {
         }
         return returnMessage;
     }
+    /*Returns RequisitionHeader*/
     @WebMethod(operationName = "method2")
     public RequisitionHeader method2(@WebParam(name = "requisitionHeaderId") int headerId) throws Exception {
         Connection conn = null;
