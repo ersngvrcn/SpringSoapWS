@@ -13,6 +13,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 @WebService(serviceName = "XXTGTestService")
+/*XXTGTest class*/    
 public class XXTGTest {
     /* Returns String */
     @WebMethod(operationName = "method1")
