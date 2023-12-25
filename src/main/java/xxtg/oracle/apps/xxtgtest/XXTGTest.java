@@ -14,7 +14,7 @@ import java.sql.SQLException;
 
 @WebService(serviceName = "XXTGTestService")
 public class XXTGTest {
-
+    /* Returns String */
     @WebMethod(operationName = "method1")
     public String method1() throws Exception {
         Integer a = null;
@@ -50,6 +50,7 @@ public class XXTGTest {
         }
         return returnMessage;
     }
+    /*Returns RequisitionHeader*/
     @WebMethod(operationName = "method2")
     public RequisitionHeader method2(@WebParam(name = "requisitionHeaderId") int headerId) throws Exception {
         Connection conn = null;
